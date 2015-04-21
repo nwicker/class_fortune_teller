@@ -24,8 +24,8 @@ Rails.application.routes.draw do
   # PART 2: VARIABLE ROUTES
   # =======================
 
-  
+
   get("/signs/:the_sign",         { :controller => "zodiacs", :action => "the_sign" })
-  get("/creatures/:the_creature", { :controller => "zodiacs", :action => "creature" })
+  get("/creatures/:the_creature", { :controller => "zodiacs", :action => "the_creature" })
 
 end

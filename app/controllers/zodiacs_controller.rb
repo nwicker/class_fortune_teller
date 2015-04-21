@@ -77,5 +77,13 @@ class ZodiacsController < ApplicationController
     render 'the_sign'
     
   end
+
+  def the_creature
+  
+    @the_creature = params[:the_creature]
+    @prediction = Zodiac.where({:creature => @the_creature.downcase})[0][:fortune]
+    render 'the_creature'
+    
+  end
   
 end
